@@ -1,9 +1,48 @@
-!!! Strict
-%html
+!!! 5
+%html{:lang => "en"}
   %head
-    %title Frank's on the scene.
-    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'/css/frank.css'}
-    %script{:type=>'text/javascript', :src=>'/js/frank.js'}
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}/
+    - if defined?(meta_description)
+      %meta{:name => 'description', :content => "#{meta_description}"}/
+  
+    %title= "Birmingham Startup Summit#{defined?(title) ? ' | ' + title : ''}"
+    
+    /[if lt IE 9]
+      %script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    / El Styles
+    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'/css/startupsummit-www.css', :media => 'all'}
+
   %body
-    #wrapper
-      = yield
+  
+    / 
+      Topbar & navigation
+      \===================
+    .topbar{ 'data-scrollspy' => 'scrollspy' }
+      .topbar-inner
+        .container
+          %a{ :class => 'brand', :href => '#' }
+            Birmingham Startup Summit
+          %ul.nav
+            %li{ :class => 'active' }
+              %a{ :href => '#overview' } Overview
+            %li
+              %a{ :href => '#schedule' } Schedule
+            %li
+              %a{ :href => '#speakers' } Speakers
+            %li
+              %a{ :href => '/register' } Register
+          %p.pull-right
+            %strong
+              Coming April 24th, 2012
+    .container
+      #content
+        = yield
+      
+    %footer
+      .container
+        %h6 Made by RareStep
+    
+    / El Javascript
+    = render_partial 'javascript_libs'
+    %script{:src => '/js/application.js'}

@@ -1,16 +1,171 @@
-#tooltip
-  Click for help.
-
-#header
-  %img{:src=>'/images/frank-med.png'}
-  %h1 Frank
-  %h2 Relax, fella. Frank's got it under control.
-
-%ol#help
-  %li
-    %p= "Edit <em>setup.rb</em> to set your server options, folder names for static/dynamic content, and layouts for your views."
-  %li
-    %p= "Stash your static files (images, flash movies, etc) in the folder that you set as <em>[static_folder]</em>."
-  %li
-    %p= "Frank will look for files in the <em>[dynamic_folder]</em> first and try to compile them."
-    %p= "Example: a request for <em>/css/blah.css</em> will look for a file in <em>[dynamic_folder]/css/</em> named <em>blah</em>. Frank uses the file extension to determine the correct compiler."
+/
+  Overview
+  \========
+%header.jumbotron#overview
+  .row
+    .span11
+      %p
+        %img{ :class => 'logo', :src => '/images/startup-summit-2012-logo.png', :width => '455', :height => '83' }
+      %p.lead 
+        A free, one-day event featuring talks by local startup founders. 
+        %br/
+        Our goal is to inspire tomorrow's founders of high-growth companies in Birmingham.
+        %strong
+          Come be inspired &amp; start something.
+      .row
+        .span6
+          %h2
+            Tuesday, April 24th, 2012
+          %h3
+            <a href="http://bhmstartupdrinks.com/" title="Birmingham Startup Drinks">Startup Drinks</a> 
+            to follow.
+        .span5
+          %p
+            %a{ :href => '/register', :title => 'Register for Startup Summit', :class => 'btn huge primary' }
+              %strong
+                Register Now
+              %small
+                Space is limited
+     
+/
+  Schedule
+  \========    
+%section#schedule
+  .page-header
+    %h1 Schedule
+  .row
+    .span9
+      %table.bordered-table.zebra-striped
+        %tbody
+          %tr
+            %td.time 9:00
+            %td Keynote
+          %tr
+            %td.time 9:30
+            %td Founder #1
+          %tr
+            %td.time 10:00
+            %td Founder #2
+          %tr
+            %td.time 10:30
+            %td Coffee Break
+          %tr
+            %td.time 11:00
+            %td Founder #3
+          %tr
+            %td.time 11:30
+            %td Lunch
+          %tr
+            %td.time 1:00
+            %td Founder #4
+          %tr
+            %td.time 1:30
+            %td Founder #5
+          %tr
+            %td.time 2:00
+            %td Founder #6
+          %tr
+            %td.time 2:30
+            %td Coffee Break
+          %tr
+            %td.time 3:00
+            %td Founder #7
+          %tr
+            %td.time 3:30
+            %td Founder #8
+          %tr
+            %td.time 4:00
+            %td Founder #9
+          %tr
+            %td.time 4:30
+            %td Founder #10
+          %tr
+            %td.time 5:00
+            %td Close Up Shop
+          %tr
+            %td.time 5:30
+            %td Startup Drinks
+          
+/
+  Speakers
+  \========    
+%section#speakers
+  .page-header
+    %h1 Speakers
+  
+  %ul.media-grid
+    %li
+      %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+        %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x150' }
+        %span
+          Founder #1
+          %small
+            Company
+    %li
+      %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+        %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x150' }
+        %span
+          Founder #2
+          %small
+            Company
+    %li
+      %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+        %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x150' }
+        %span
+          Founder #3
+          %small
+            Company
+    %li
+      %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+        %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x150' }
+        %span
+          Founder #4
+          %small
+            Company
+    %li
+      %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+        %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x150' }
+        %span
+          Founder #5
+          %small
+            Company
+    %li
+      %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+        %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x150' }
+        %span
+          Founder #6
+          %small
+            Company
+    %li
+      %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+        %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x150' }
+        %span
+          Founder #7
+          %small
+            Company
+    %li
+      %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+        %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x150' }
+        %span
+          Founder #8
+          %small
+            Company
+      
+  .row
+    .offset4
+      %ul.media-grid
+        %li
+          %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+            %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x150' }
+            %span
+              Founder #9
+              %small
+                Company
+        %li
+          %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+            %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x150' }    
+            %span
+              Founder #10
+              %small
+                Company
+  
