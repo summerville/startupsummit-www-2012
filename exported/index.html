@@ -1,32 +1,314 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang='en'>
   <head>
-    <title>Frank's on the scene.</title>
-    <link href='/css/frank.css' rel='stylesheet' type='text/css' />
-    <script src='/js/frank.js' type='text/javascript'></script>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <title>Birmingham Startup Summit</title>
+    <!--[if lt IE 9]>
+      <script src='//html5shim.googlecode.com/svn/trunk/html5.js'></script>
+    <![endif]-->
+    <!-- El Styles -->
+    <link href='/css/startupsummit-www.css' media='all' rel='stylesheet' type='text/css' />
   </head>
   <body>
-    <div id='wrapper'>
-      <div id='tooltip'>
-        Click for help.
+    <!--
+      Topbar & navigation
+      ===================
+    -->
+    <div class='topbar' data-scrollspy='scrollspy'>
+      <div class='topbar-inner'>
+        <div class='container'>
+          <a class='brand' href='#'>
+            Birmingham Startup Summit
+          </a>
+          <ul class='nav'>
+            <li class='active'>
+              <a href='#overview'>Overview</a>
+            </li>
+            <li>
+              <a href='#schedule'>Schedule</a>
+            </li>
+            <li>
+              <a href='#speakers'>Speakers</a>
+            </li>
+            <li>
+              <a href='/register'>Register</a>
+            </li>
+          </ul>
+          <p class='pull-right'>
+            <strong>
+              Coming April 24th, 2012
+            </strong>
+          </p>
+        </div>
       </div>
-      <div id='header'>
-        <img src='/images/frank-med.png' />
-        <h1>Frank</h1>
-        <h2>Relax, fella. Frank's got it under control.</h2>
-      </div>
-      <ol id='help'>
-        <li>
-          <p>Edit <em>setup.rb</em> to set your server options, folder names for static/dynamic content, and layouts for your views.</p>
-        </li>
-        <li>
-          <p>Stash your static files (images, flash movies, etc) in the folder that you set as <em>[static_folder]</em>.</p>
-        </li>
-        <li>
-          <p>Frank will look for files in the <em>[dynamic_folder]</em> first and try to compile them.</p>
-          <p>Example: a request for <em>/css/blah.css</em> will look for a file in <em>[dynamic_folder]/css/</em> named <em>blah</em>. Frank uses the file extension to determine the correct compiler.</p>
-        </li>
-      </ol>
     </div>
+    <div class='container'>
+      <div id='content'>
+        <!--
+          Overview
+          ========
+        -->
+        <header class='jumbotron' id='overview'>
+          <div class='row'>
+            <div class='span11'>
+              <p>
+                <img class='logo' height='83' src='/images/startup-summit-2012-logo.png' width='455' />
+              </p>
+              <p class='lead'>
+                A free, one-day event featuring talks by local startup founders.
+                <br />
+                Our goal is to inspire tomorrow's founders of high-growth companies in Birmingham.
+                <strong>
+                  Come be inspired &amp; start something.
+                </strong>
+              </p>
+              <div class='row'>
+                <div class='span6'>
+                  <h2>
+                    Tuesday, April 24th, 2012
+                  </h2>
+                  <h3>
+                    <a href="http://bhmstartupdrinks.com/" title="Birmingham Startup Drinks">Startup Drinks</a>
+                    to follow.
+                  </h3>
+                </div>
+                <div class='span5'>
+                  <p>
+                    <a class='btn huge primary' href='/register' title='Register for Startup Summit'>
+                      <strong>
+                        Register Now
+                      </strong>
+                      <small>
+                        Space is limited
+                      </small>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!--
+          Schedule
+          ========
+        -->
+        <section id='schedule'>
+          <div class='page-header'>
+            <h1>Schedule</h1>
+          </div>
+          <div class='row'>
+            <div class='span9'>
+              <table class='bordered-table zebra-striped'>
+                <tbody>
+                  <tr>
+                    <td class='time'>9:00</td>
+                    <td>Keynote</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>9:30</td>
+                    <td>Founder #1</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>10:00</td>
+                    <td>Founder #2</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>10:30</td>
+                    <td>Coffee Break</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>11:00</td>
+                    <td>Founder #3</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>11:30</td>
+                    <td>Lunch</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>1:00</td>
+                    <td>Founder #4</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>1:30</td>
+                    <td>Founder #5</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>2:00</td>
+                    <td>Founder #6</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>2:30</td>
+                    <td>Coffee Break</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>3:00</td>
+                    <td>Founder #7</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>3:30</td>
+                    <td>Founder #8</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>4:00</td>
+                    <td>Founder #9</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>4:30</td>
+                    <td>Founder #10</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>5:00</td>
+                    <td>Close Up Shop</td>
+                  </tr>
+                  <tr>
+                    <td class='time'>5:30</td>
+                    <td>Startup Drinks</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!--
+          Speakers
+          ========
+        -->
+        <section id='speakers'>
+          <div class='page-header'>
+            <h1>Speakers</h1>
+          </div>
+          <ul class='media-grid'>
+            <li>
+              <a data-content='Expedita commodi rerum odit. molestias voluptatum suscipit dolor vel adipisci quas commodi. impedit sint id voluptatem et. ducimus architecto possimus aliquam totam molestiae voluptatibus quos fuga ut' href='#' rel='popover' title='Tricia Weiner'>
+                <img class='thumbnail' src='http://placehold.it/210x150' />
+                <span>
+                  Founder #1
+                  <small>
+                    Company
+                  </small>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a data-content='Excepturi reprehenderit cumque non nemo ut et aut suscipit. rerum id consequuntur est sit earum. magni voluptatum ipsam enim sit sint. aut ipsum minima autem praesentium et quibusdam iure modi. officiis temporibus officia at voluptate vel itaque. optio aut recusandae et aut eos quas quo illum. nihil doloribus ratione aliquam aspernatur delectus quaerat ab nemo doloremque tempora' href='#' rel='popover' title='Wayne Barr'>
+                <img class='thumbnail' src='http://placehold.it/210x150' />
+                <span>
+                  Founder #2
+                  <small>
+                    Company
+                  </small>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a data-content='Cum vitae officiis perferendis et dicta qui. omnis officiis impedit dolores. hic ab in soluta vel in veritatis quis consequatur. sed recusandae expedita at non sed ipsa et voluptatem similique aut libero et' href='#' rel='popover' title='Byron Hoyle'>
+                <img class='thumbnail' src='http://placehold.it/210x150' />
+                <span>
+                  Founder #3
+                  <small>
+                    Company
+                  </small>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a data-content='Tempore quia dignissimos qui exercitationem cumque qui cupiditate ut sit molestiae. voluptatem eum consequatur molestiae ea aut iusto. eum suscipit molestias magni eos esse aut eos necessitatibus mollitia consequatur a quo itaque. esse alias nobis repudiandae impedit magnam voluptas nostrum eveniet ab est. sunt voluptate tempora autem qui voluptas cumque minima fuga maiores voluptas ea aut soluta consequatur. mollitia eos quia quod' href='#' rel='popover' title='Gayle Sutton'>
+                <img class='thumbnail' src='http://placehold.it/210x150' />
+                <span>
+                  Founder #4
+                  <small>
+                    Company
+                  </small>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a data-content='Velit officiis nisi hic quisquam aut delectus aliquid accusantium quisquam alias consequatur. sit aliquid excepturi quia. quisquam et nihil ea. ipsam doloribus unde aut sed suscipit facere qui nihil voluptatem ut laudantium in. recusandae sint rerum rem. eos id voluptas id omnis sed dolore harum et neque expedita facilis ab. voluptatum velit qui molestiae numquam' href='#' rel='popover' title='Shawn Walton'>
+                <img class='thumbnail' src='http://placehold.it/210x150' />
+                <span>
+                  Founder #5
+                  <small>
+                    Company
+                  </small>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a data-content='Corporis praesentium architecto voluptas. natus ut aut dolor qui ad quod alias unde. cupiditate dolorem enim dolores est aperiam saepe temporibus odio consectetur a dolor quo quibusdam. aut tempora sint magnam fugiat sunt quia ut corrupti quis ut voluptatem voluptatem. et nisi quis nihil ducimus optio necessitatibus omnis ea qui temporibus non. officia inventore sed possimus dolor et non fuga sapiente iure unde aut aperiam. quas optio omnis sapiente sit dolorem quas sit saepe' href='#' rel='popover' title='Johnnie Cooper'>
+                <img class='thumbnail' src='http://placehold.it/210x150' />
+                <span>
+                  Founder #6
+                  <small>
+                    Company
+                  </small>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a data-content='Eligendi asperiores sed quis delectus accusamus in rerum quasi totam sunt rerum vel. voluptas autem expedita mollitia debitis ad nisi officiis sit nemo. repellat dignissimos omnis atque aut quis excepturi. quis tempore perspiciatis veniam enim nesciunt non quos recusandae et vero aperiam molestiae autem ut. et fugiat culpa rerum dolor rem nemo voluptatem repellat explicabo aspernatur a. ut veritatis eum magnam totam fuga illo tempore itaque est voluptates et est pariatur. deleniti sit consequatur ut possimus amet accusantium recusandae voluptates sed dolorum sunt' href='#' rel='popover' title='Darius Pearson'>
+                <img class='thumbnail' src='http://placehold.it/210x150' />
+                <span>
+                  Founder #7
+                  <small>
+                    Company
+                  </small>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a data-content='Modi accusamus consequuntur maxime aut iure est labore quasi hic aut deleniti est debitis. iusto ut et asperiores corrupti vel omnis inventore exercitationem velit et voluptas. sint vel alias numquam et. fuga quisquam totam qui explicabo sint fugiat quas rerum non rerum. qui non aliquam quae. quam molestiae excepturi reiciendis velit et asperiores. incidunt quae provident doloremque ea quia et libero molestias qui explicabo temporibus laudantium' href='#' rel='popover' title='Carla Abbott'>
+                <img class='thumbnail' src='http://placehold.it/210x150' />
+                <span>
+                  Founder #8
+                  <small>
+                    Company
+                  </small>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div class='row'>
+            <div class='offset4'>
+              <ul class='media-grid'>
+                <li>
+                  <a data-content='Quia quaerat velit in at et. consequuntur eum eos laudantium veritatis a eum rem sint. ea omnis aut voluptates aut quisquam qui. debitis possimus delectus iure mollitia optio nihil iusto sit et sint. quis ipsa labore voluptatem est velit qui alias nulla ut. sit aut dolores eaque' href='#' rel='popover' title='Orlaith Matthews'>
+                    <img class='thumbnail' src='http://placehold.it/210x150' />
+                    <span>
+                      Founder #9
+                      <small>
+                        Company
+                      </small>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a data-content='Voluptas voluptatem numquam et non ad amet. aliquam et voluptatem optio. quos molestiae voluptates nulla ullam voluptatum enim ratione nihil et rerum. illo voluptatem enim consequatur exercitationem blanditiis molestiae. aut laboriosam et rerum quis ex dolor. iste sequi maxime iste accusantium quis molestias voluptas. hic maxime est ea dolore sit' href='#' rel='popover' title='Ian Chandler'>
+                    <img class='thumbnail' src='http://placehold.it/210x150' />
+                    <span>
+                      Founder #10
+                      <small>
+                        Company
+                      </small>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class='container'>
+        <h6>Made by RareStep</h6>
+      </div>
+    </footer>
+    <!-- El Javascript -->
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+    <script src='/assets/bootstrap/js/bootstrap-twipsy.js'></script>
+    <script src='/assets/bootstrap/js/bootstrap-popover.js'></script>
+    <script src='/assets/bootstrap/js/bootstrap-modal.js'></script>
+    <script src='/assets/bootstrap/js/bootstrap-scrollspy.js'></script>
+    <script src='/js/application.js'></script>
   </body>
 </html>

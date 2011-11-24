@@ -1,0 +1,219 @@
+@import "bootstrap/lib/bootstrap";
+
+// BASE
+// ------
+
+// Links
+@linkColor:         #007EB9;
+@linkColorHover:    #EEA420;
+
+// Grays
+@black:             #000;
+@grayDark:          #333;
+@grayDarkish:       #454545;
+@gray:              #555;
+@grayLight:         #999;
+@grayLighter:       #DDD;
+@grayLightest:      #FCFCFC;
+@white:             #fff;
+
+// Other Colors
+@greenLight:        #9DC453;
+@greenDark:         #508600;
+
+// Fonts
+@basefont:          13px;
+@baseline:          18px;
+
+// Floating & Alignment
+.fl {float:left;}
+.fr {float:right;}
+.ac {text-align:center;}
+.ar {text-align:right;}
+
+// LAYOUT
+// ------
+
+body {
+  background: @white url(/images/grid-18px.png) top center;
+  color: @grayDarkish;
+}
+
+#content {
+  background: transparent url(/images/lightbulb.png) no-repeat right 60px;
+}
+
+section {
+  padding-top: 60px;
+}
+
+
+.topbar {
+
+  a {
+    color: @grayLighter;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  }
+  
+  p {
+    color: @grayLighter;
+  }
+
+  // Hover and active states
+  // h3 for backwards compatibility
+  h3 a:hover,
+  .brand:hover,
+  ul .active > a {
+    background-color: #333;
+    background-color: rgba(255,255,255,.05);
+    color: @white;
+    text-decoration: none;
+  }
+  
+  .topbar-inner {
+    #gradient > .vertical(#868F98, #7C848C);
+  }
+  
+}
+
+.topbar div > ul,
+.nav {
+  .active > a {
+    background-color: #737C86;
+  }
+}
+
+.jumbotron {
+  padding-top: 80px;
+  
+  .lead {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  background-color: @grayLightest;
+  border-top: 1px solid @grayLighter;
+}
+
+
+// MEDIA GRIDS
+// -----------
+
+.media-grid {
+  a {
+    background-color: @white;
+    
+    span,
+    span > small {
+      display: block;
+      text-align: center;
+    }
+    
+    span {
+      color: @gray;
+      font-size: 18px;
+      line-height: @baseline + 10;
+      margin-top: 10px;
+      
+      > small {
+        color: @grayLight;
+        font-size: @basefont;
+        margin: 0 0 10px;
+      }
+    } 
+    
+    &:hover {
+      text-decoration: none;
+      
+      span,
+      span > small {
+        color: @grayDark;
+      }
+    }
+  }
+}
+
+
+// PAGE HEADERS
+// ------------
+
+.page-header {
+  border-bottom: none;
+  
+  h1 {
+    color: #63AE34;
+  }
+}
+
+
+// BUTTONS
+// -------
+
+.btn {
+  
+  small {
+    display: block;
+    margin-top: 3px;
+    text-align: center;
+  }
+  
+  &.primary,
+  &.primary:hover,
+  &.danger,
+  &.danger:hover,
+  &.error,
+  &.error:hover,
+  &.success,
+  &.success:hover,
+  &.info,
+  &.info:hover {
+    small {
+      color: @white
+    }
+  }
+  
+  &.primary {
+    .gradientBar(#63AE34, #508C2A);
+  }
+  
+  &.huge {
+    font-size: @basefont + 5px;
+    line-height: normal;
+    padding: 15px 18px 15px;
+    .border-radius(6px);
+  }
+  
+}
+
+
+// TABLES
+// ------
+
+table {
+  th, td {
+    background-color: @white;
+  }
+}
+
+#schedule {
+  table {    
+    th + th,
+    td + td,
+    th + td {
+      border-left: none;
+    }
+    
+    td {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    
+    td.time {
+      text-align: center;
+      width: 100px;
+    }
+  }
+}
