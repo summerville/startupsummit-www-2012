@@ -5,23 +5,24 @@
   .row
     .span11
       %p
-        %img{ :class => 'logo', :src => '/images/startup-summit-2012-logo.png', :width => '455', :height => '83' }
+        %img{ class: 'logo', src: '/images/startup-summit-2012-logo.png', width: '455', height: '83' }
       %p.lead 
         A free, one-day event featuring talks by local startup founders. 
         %br/
         Our goal is to inspire tomorrow's founders of high-growth companies in Birmingham.
         %strong
-          Come be inspired &amp; start something.
+          Come be inspired and start something.
       .row
         .span6
           %h2
             Tuesday, April 24th, 2012
           %h3
-            <a href="http://bhmstartupdrinks.com/" title="Birmingham Startup Drinks">Startup Drinks</a> 
+            %a{ href: 'http://bhmstartupdrinks.com', title: 'Birmingham Startup Drinks', target: '_blank' }
+              Startup Drinks 
             to follow.
         .span5
           %p
-            %a{ :href => '/register', :title => 'Register for Startup Summit', :class => 'btn huge primary' }
+            %a{ href: '/register', title: 'Register for Startup Summit', class: 'btn huge primary' }
               %strong
                 Register Now
               %small
