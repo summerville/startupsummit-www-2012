@@ -1,20 +1,20 @@
 !!! 5
 %html{:lang => "en"}
   %head
-    %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}/
+    %meta{'http-equiv' => 'Content-Type', content: 'text/html; charset=utf-8'}/
     - if defined?(meta_description)
-      %meta{:name => 'description', :content => "#{meta_description}"}/
+      %meta{ name: 'description', content: "#{meta_description}"}/
   
     %title= "Birmingham Startup Summit#{defined?(title) ? ' | ' + title : ''}"
     
     /[if lt IE 9]
-      %script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
+      %script{ src: '//html5shim.googlecode.com/svn/trunk/html5.js' }
     
     / El Styles
-    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'/css/startupsummit-www.css', :media => 'all'}
+    %link{ rel: 'stylesheet', type: 'text/css', href: '/css/startupsummit-www.css', media: 'all' }
     
     / El Favicon
-    %link{:rel=>'shortcut icon', :href=>'/favicon.ico'}
+    %link{ rel: 'icon shortcut', href: '/favicon.ico', type: 'image/x-icon' }
 
   %body
   
