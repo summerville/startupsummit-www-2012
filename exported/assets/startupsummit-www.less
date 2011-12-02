@@ -35,16 +35,11 @@
 // ------
 
 body {
-  background: @white url(/images/grid-18px.png) top center;
   color: @grayDarkish;
 }
 
-#content {
-  background: transparent url(/images/lightbulb.png) no-repeat right 60px;
-}
-
 section {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 
@@ -84,12 +79,25 @@ section {
 }
 
 .jumbotron {
-  padding-top: 80px;
+  background: @white url(/images/grid-18px.png) top center;
+  .box-shadow(inset 0 10px 75px rgba(0,0,0,.15));
+  border-bottom: 1px solid @grayLighter;
+    
+  padding-top: 40px;
+  
+  .container {
+    background: transparent url(/images/lightbulb.png) no-repeat right 10px;
+  }
+  
+  .inner {
+    padding: 40px 0;
+  }
   
   .lead {
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 22px;
+    line-height: 28px;
     margin-bottom: 20px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.1);
   }
 }
 
@@ -140,11 +148,10 @@ footer {
 // PAGE HEADERS
 // ------------
 
-.page-header {
-  border-bottom: none;
-  
+.page-header {  
   h1 {
-    color: #63AE34;
+    color: #414B56;
+    // text-shadow: 0 1px 2px rgba(0,0,0,.2);
   }
 }
 
@@ -182,7 +189,7 @@ footer {
   &.huge {
     font-size: @basefont + 5px;
     line-height: normal;
-    padding: 15px 18px 15px;
+    padding: 15px 40px 15px;
     .border-radius(6px);
   }
   
@@ -216,4 +223,13 @@ table {
       width: 100px;
     }
   }
+}
+
+
+// EXTERNAL LINKS
+// --------------
+
+.external {
+  background: transparent url(/images/external.png) no-repeat 100% 0;
+  padding-right: 11px;
 }
