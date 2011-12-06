@@ -1,13 +1,19 @@
 /
   Overview
   \========
-%header.jumbotron#overview
+%header.jumbotron.masthead#overview
   .container
     .inner
       .row
         .span11
-          %p
-            %img{ class: 'logo', src: '/images/startup-summit-2012-logo.png', width: '427', height: '83' }
+          .row
+            .span8
+              %p
+                %img{ class: 'logo', src: '/images/startup-summit-2012-logo.png', width: '427', height: '83' }
+            .span3
+              #bvc-banner
+                %a{ href: 'http://www.birminghamventure.com/', title: 'Birmingham Venture Club Website', target: '_blank', }
+                  %img{ src: '/images/venture-club-banner.png', width: '155', height: '130' }
           %p.lead 
             A free, one-day event featuring talks by local startup founders. 
             %br/

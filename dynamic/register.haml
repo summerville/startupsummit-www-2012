@@ -1,0 +1,36 @@
+/
+  Overview
+  \========
+%header.jumbotron.subhead
+  .container
+    .inner
+      .row
+        .span11
+          %h1 Register for Startup Summit
+          %p.lead 
+            A free, one-day event featuring talks by local startup founders.
+        .span5
+          %h3
+            %small
+              When:
+            Tuesday, April 24th, 2012
+          %h3
+            %small
+              Where:
+            TBD
+        
+.container
+
+  %section#register
+    :javascript
+      var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));
+
+    :javascript
+      var z7x3k1 = new WufooForm();
+      z7x3k1.initialize({
+      'userName':'startupsummit', 
+      'formHash':'z7x3k1', 
+      'autoResize':true,
+      'height':'710',
+      'header':'show'});
+      z7x3k1.display();
