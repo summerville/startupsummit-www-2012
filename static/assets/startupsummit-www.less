@@ -217,6 +217,19 @@ footer {
 }
 
 
+// MESSAGES
+// --------
+
+.alert-message {
+  &.block-message {
+    &.info {
+      background-color: lighten(#007EB9, 60%);
+      border-color: lighten(#007EB9, 45%);
+    } 
+  }
+}
+
+
 // TABLES
 // ------
 
@@ -237,11 +250,20 @@ table {
     td {
       font-size: 18px;
       line-height: 27px;
-    }
-    
-    td.time {
-      text-align: center;
-      width: 100px;
+      
+      small {
+        color: @grayLight;
+        font-size: 15px;
+      }
+      
+      &.time {
+        text-align: center;
+        width: 100px;
+      }
+      
+      &.break {
+        color: #869582;
+      }
     }
   }
 }
