@@ -24,16 +24,17 @@
     .topbar{ 'data-scrollspy' => 'scrollspy' }
       .topbar-inner
         .container
-          %a{ :class => 'brand', :href => '#' }
+          %a{ :class => 'brand', :href => '#overview' }
             Birmingham Startup Summit
           %ul.nav
-            %li{ :class => 'active' }
-              %a{ :href => '#overview' } Overview
+            - active_nav_link = nil if !defined?(active_nav_link)
+            %li{ :class => "#{active_nav_link == :root ? 'active' : '' }" }
+              %a{ :href => "#{active_nav_link != :root ? '/' : '' }#overview" } Overview
             %li
-              %a{ :href => '#schedule' } Schedule
+              %a{ :href => "#{active_nav_link != :root ? '/' : '' }#schedule" } Schedule
             %li
-              %a{ :href => '#speakers' } Speakers
-            %li
+              %a{ :href => "#{active_nav_link != :root ? '/' : '' }#speakers" } Speakers
+            %li{ :class => "#{active_nav_link == :register ? 'active' : '' }" }
               %a{ :href => '/register' } Register
           %p.pull-right
             %strong
