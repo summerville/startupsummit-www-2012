@@ -371,7 +371,7 @@ section{padding-top:40px;}
 .jumbotron .inner{padding:40px 0;}
 .jumbotron .lead{font-size:22px;line-height:28px;margin-bottom:20px;text-shadow:0 1px 1px rgba(0, 0, 0, 0.1);}
 .jumbotron #bvc-banner{margin-top:-50px;}.jumbotron #bvc-banner a,.jumbotron #bvc-banner img{border:0;}
-footer{background-color:#fcfcfc;border-top:1px solid #dddddd;}
+footer{background-color:#fcfcfc;border-top:1px solid #dddddd;margin-top:60px;padding-bottom:60px;}footer .addthis_toolbox{padding-top:8px;}
 .media-grid a{background-color:#ffffff;}.media-grid a span,.media-grid a span>small{display:block;text-align:center;}
 .media-grid a span{color:#555555;font-size:18px;line-height:28px;margin-top:10px;}.media-grid a span>small{color:#999999;font-size:13px;margin:0 0 10px;}
 .media-grid a:hover{text-decoration:none;}.media-grid a:hover span,.media-grid a:hover span>small{color:#333333;}
