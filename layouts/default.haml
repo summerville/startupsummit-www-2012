@@ -21,13 +21,13 @@
     / 
       Topbar & navigation
       \===================
+    - active_nav_link = nil if !defined?(active_nav_link)
     .topbar{ 'data-scrollspy' => 'scrollspy' }
       .topbar-inner
         .container
-          %a{ :class => 'brand', :href => '#overview' }
+          %a{ :class => 'brand', :href => "#{active_nav_link != :root ? '/' : '' }#overview" }
             Birmingham Startup Summit
           %ul.nav
-            - active_nav_link = nil if !defined?(active_nav_link)
             %li{ :class => "#{active_nav_link == :root ? 'active' : '' }" }
               %a{ :href => "#{active_nav_link != :root ? '/' : '' }#overview" } Overview
             %li
