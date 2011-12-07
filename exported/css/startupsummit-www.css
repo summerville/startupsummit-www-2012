@@ -387,3 +387,4 @@ table th,table td{background-color:#ffffff;}
 #schedule table td.time{text-align:center;width:100px;}
 #schedule table td.break{color:#869582;}
 .external{background:transparent url(/images/external.png) no-repeat 100% 0;padding-right:11px;}
+.calendar{background:transparent url(/images/calendar.png) no-repeat 0 50%;padding-left:40px;}

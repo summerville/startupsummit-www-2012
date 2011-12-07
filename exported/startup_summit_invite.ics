@@ -1,0 +1,58 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 12.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:PUBLISH
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20111207T034821Z
+DESCRIPTION:A free\, one-day event featuring talks by local startup founder
+	s.  Our goal is to inspire tomorrow's founders of high-growth companies in
+	 Birmingham.  Come be inspired and start something.\n\nThere will be nearl
+	y a dozen founder speakers.  Lunch and refreshment breaks will be provided
+	.  Birmingham Startup Drinks will follow the event!\n\nThe location and fo
+	under speakers are still being confirmed.  Please check back later at http
+	://www.StartupSummit.org for more information.\n\n
+DTEND:20120424T223000Z
+DTSTAMP:20111207T034821Z
+DTSTART:20120424T140000Z
+LAST-MODIFIED:20111207T034821Z
+LOCATION:TBD - please check back later at http://www.StartupSummit.org
+PRIORITY:5
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Birmingham Startup Summit
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000907F939256AFCC01000000000000000
+	010000000E1666C955F4F31449BB14CA26CE6A4B5
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion 08.00.0681.000">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted f
+	rom text/rtf format -->\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Calib
+	ri">A free\, one-day event featuring talks by local startup founders.&nbsp
+	\; Our goal is to inspire tomorrow's founders of high-growth companies in 
+	Birmingham.&nbsp\;</FONT></SPAN><SPAN LANG="en-us"><B> <FONT FACE="Calibri
+	">Come be inspired and start something.</FONT></B></SPAN><SPAN LANG="en-us
+	"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Calibri">There 
+	will be nearly a dozen founder speakers.&nbsp\; Lunch and refreshment brea
+	ks will be provided.&nbsp\; Birmingham Startup Drinks will follow the even
+	t!</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Calibri"
+	>The location and founder speakers are still being confirmed.&nbsp\; Pleas
+	e check back later at</FONT></SPAN><SPAN LANG="en-us"> </SPAN><A HREF="htt
+	p://www.StartupSummit.org"><SPAN LANG="en-us"><U><FONT COLOR="#0000FF" FAC
+	E="Calibri">http://www.StartupSummit.org</FONT></U></SPAN><SPAN LANG="en-u
+	s"></SPAN></A><SPAN LANG="en-us"><FONT FACE="Calibri"> for more informatio
+	n.</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"></SPAN></P>\n\n</BOD
+	Y>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-ALLOWEXTERNCHECK:TRUE
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+X-MS-OLK-CONFTYPE:0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
