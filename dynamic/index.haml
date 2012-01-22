@@ -49,13 +49,13 @@ META----------------------------------------------------------------------------
 .container
 
   /
-    Schedule
+    Speakers
     \========    
-  %section#schedule
+  %section#speakers
     .page-header
       .row
         .span8
-          %h1 Schedule
+          %h1 Founder Speakers
         .span8
           / AddThis Button BEGIN
           .addthis_toolbox.addthis_default_style.pull-right{ add_this_url_and_title }
@@ -63,7 +63,94 @@ META----------------------------------------------------------------------------
             <a class="addthis_button_tweet" tw:via="bhamventure"></a>
             <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
             <a class="addthis_counter addthis_pill_style"></a>
-          / AddThis Button END
+          / AddThis Button END      
+    %ul.media-grid
+      %li
+        %a{ :title => 'Josh Dennis', 'data-content' => "Josh Dennis is co-founder of Centrix Information Solutions delivering social media solutions and social compliance for financial institutions, higher education, healthcare and politics. Josh previously was co-founder and President of Marketing Solutions, Inc., (MSI), a CRM solution for community banks and credit unions which was acquired by Fidelity in May of 2007. MSI serviced over 150 community banks across the United States totaling more than $7 billion in assets.", :rel => 'popover', :href => '#' }
+          %img{ src: '/images/speakers/josh-dennis.png', class: 'thumbnail', width: '210', height: '210'  }
+          %span
+            Josh Dennis
+            %small
+              Co-founder, Centrix &amp; MSI
+      %li
+        %a{ :title => 'Jeff Gale', 'data-content' => "Jeff has been in the web experience business since 1997, when he co-founded Nylon Designs in Brooklyn, NY. Jeff developed the original TicketBiscuit system in 2001, and in 2005, turned his full attention to the ticketing needs of the entertainment industry. Jeff earned his BA in Drama and Theatre Arts cum laude from Columbia University in 1996. He is a self-taught engineer and businessman.", :rel => 'popover', :href => '#' }
+          %img{ src: '/images/speakers/jeff-gale.png', class: 'thumbnail', width: '210', height: '210'  }
+          %span
+            Jeff Gale
+            %small
+              Founder, TicketBiscuit
+      -#
+        %li
+          %a{ :title => 'David Gray', 'data-content' => "David is president and CEO of Daxko, a Birmingham-based software and services provider for member-based non-profits with nearly 500 customers and 170 team members around the world. Those who know David know he is passionate about promoting Birmingham and high-growth companies.", :rel => 'popover', :href => '#' }
+            %img{ src: '/images/speakers/david-gray.png', class: 'thumbnail', width: '210', height: '210'  }
+            %span
+              David Gray
+              %small
+                CEO, Daxko
+      %li
+        %a{ :title => 'G.T. LaBorde', 'data-content' => "G.T. is a Birmingham-based entrepreneur, venture investor and educator. He was a co-founder of MedMined and served as COO from startup up through its sale to Cardinal Health in 2006 for more than $100 million in total consideration. He is currently an Operating Consultant with Eastside Partners, a Huntsville venture capital fund. He is also an Adjunct Professor at the University of Alabama in Birmingham School of Business. And, G.T. serves on the Board of Directors at Hygia Health Services and on the Executive Committee for TechBirmingham.", :rel => 'popover', :href => '#' }
+          %img{ src: '/images/speakers/gt-laborde.png', class: 'thumbnail', width: '210', height: '210'  }
+          %span
+            G.T. LaBorde
+            %small
+              Co-founder, MedMined
+      %li
+        %a{ title: 'Jason McCay', data: { content: "Jason is a co-founder of MongoHQ, a high-growth cloud database company, and a Y Combinator alumnus. He focuses his time on the user side of the product by handling day-to-day operations and support. When you interact with MongoHQ, chances are that you are interacting with him." }, rel: 'popover', href: '#' }
+          %img{ src: '/images/speakers/jason-mccay.png', class: 'thumbnail', width: '210', height: '210'  }
+          %span
+            Jason McCay
+            %small
+              Co-founder, MongoHQ
+      -#
+        %li
+          %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+            %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x210' }
+            %span
+              Founder #6
+              %small
+                Company
+        %li
+          %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+            %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x210' }
+            %span
+              Founder #7
+              %small
+                Company
+        %li
+          %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
+            %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x210' }
+            %span
+              Founder #8
+              %small
+                Company
+    .row
+      .offset4
+        %ul.media-grid
+          %li
+            %a{ :title => 'Mario Moore', 'data-content' => "Mario is the founder and CEO of GradesFirst, a provider of student support software to over 200 colleges and universities across the country. Mario has led the company from a bootstrapped startup to fast-growing market leader. He's an open book and says no question will be off limits so bring it!", :rel => 'popover', :href => '#' }
+              %img{ src: '/images/speakers/mario-moore.png', class: 'thumbnail', width: '210', height: '210'  }
+              %span
+                Mario Moore
+                %small
+                  Founder, GradesFirst
+          %li
+            %a{ title: 'Ben Wyrosdick', data: { content: "Ben is a co-founder of MongoHQ, a high-growth Database-as-a-Service company, and a Y Combinator alumnus. He is responsible for the vision and implementation of the technology that makes the MongoHQ product special. He has a background in computer engineering and has worked with numerous development languages and database technologies." }, rel: 'popover', href: '#' }
+              %img{ src: '/images/speakers/ben-wyrosdick.png', class: 'thumbnail', width: '210', height: '210'  }
+              %span
+                Ben Wyrosdick
+                %small
+                  Co-founder, MongoHQ
+                    
+    .alert-message.block-message.info
+      <strong>More founder speakers are still being confirmed.</strong> Check back for updates.
+    
+
+  /
+    Schedule
+    \========    
+  %section#schedule
+    .page-header
+      %h1 Schedule
     .row
       .span9
         %table.bordered-table.zebra-striped
@@ -123,106 +210,4 @@ META----------------------------------------------------------------------------
         .alert-message.block-message.info
           <strong>The schedule and speakers are still being confirmed.</strong> Please check back for
           updates.
-          
-  /
-    Speakers
-    \========    
-  %section#speakers
-    .page-header
-      %h1 Speakers
-  
-    .alert-message.block-message.info
-      <strong>More speakers are still being confirmed.</strong> Check back for updates.
-      
-    %ul.media-grid
-      %li
-        %a{ :title => 'Josh Dennis', 'data-content' => "Josh Dennis is co-founder of Centrix Information Solutions delivering social media solutions and social compliance for financial institutions, higher education, healthcare and politics. Josh previously was co-founder and President of Marketing Solutions, Inc., (MSI), a CRM solution for community banks and credit unions which was acquired by Fidelity in May of 2007. MSI serviced over 150 community banks across the United States totaling more than $7 billion in assets.", :rel => 'popover', :href => '#' }
-          %img{ src: '/images/speakers/josh-dennis.png', class: 'thumbnail', width: '210', height: '210'  }
-          %span
-            Josh Dennis
-            %small
-              Co-founder, Centrix &amp; MSI
-      %li
-        %a{ :title => 'Jeff Gale', 'data-content' => "Jeff has been in the web experience business since 1997, when he co-founded Nylon Designs in Brooklyn, NY. Jeff developed the original TicketBiscuit system in 2001, and in 2005, turned his full attention to the ticketing needs of the entertainment industry. Jeff earned his BA in Drama and Theatre Arts cum laude from Columbia University in 1996. He is a self-taught engineer and businessman.", :rel => 'popover', :href => '#' }
-          %img{ src: '/images/speakers/jeff-gale.png', class: 'thumbnail', width: '210', height: '210'  }
-          %span
-            Jeff Gale
-            %small
-              Founder, TicketBiscuit
-      %li
-        %a{ :title => 'David Gray', 'data-content' => "David is president and CEO of Daxko, a Birmingham-based software and services provider for member-based non-profits with nearly 500 customers and 170 team members around the world. Those who know David know he is passionate about promoting Birmingham and high-growth companies.", :rel => 'popover', :href => '#' }
-          %img{ src: '/images/speakers/david-gray.png', class: 'thumbnail', width: '210', height: '210'  }
-          %span
-            David Gray
-            %small
-              CEO, Daxko
-      %li
-        %a{ :title => 'G.T. LaBorde', 'data-content' => "G.T. is a Birmingham-based entrepreneur, venture investor and educator. He was a co-founder of MedMined and served as COO from startup up through its sale to Cardinal Health in 2006 for more than $100 million in total consideration. He is currently an Operating Consultant with Eastside Partners, a Huntsville venture capital fund. He is also an Adjunct Professor at the University of Alabama in Birmingham School of Business. And, G.T. serves on the Board of Directors at Hygia Health Services and on the Executive Committee for TechBirmingham.", :rel => 'popover', :href => '#' }
-          %img{ src: '/images/speakers/gt-laborde.png', class: 'thumbnail', width: '210', height: '210'  }
-          %span
-            G.T. LaBorde
-            %small
-              Co-founder, MedMined
-      %li
-        %a{ title: 'Jason McCay', data: { content: "Jason is a co-founder of MongoHQ, a high-growth cloud database company, and a Y Combinator alumnus. He focuses his time on the user side of the product by handling day-to-day operations and support. When you interact with MongoHQ, chances are that you are interacting with him." }, rel: 'popover', href: '#' }
-          %img{ src: '/images/speakers/jason-mccay.png', class: 'thumbnail', width: '210', height: '210'  }
-          %span
-            Jason McCay
-            %small
-              Co-founder, MongoHQ
-      %li
-        %a{ :title => 'Mario Moore', 'data-content' => "Mario is the founder and CEO of GradesFirst, a provider of student support software to over 200 colleges and universities across the country. Mario has led the company from a bootstrapped startup to fast-growing market leader. He's an open book and says no question will be off limits so bring it!", :rel => 'popover', :href => '#' }
-          %img{ src: '/images/speakers/mario-moore.png', class: 'thumbnail', width: '210', height: '210'  }
-          %span
-            Mario Moore
-            %small
-              Founder, GradesFirst
-      %li
-        %a{ title: 'Ben Wyrosdick', data: { content: "Ben is a co-founder of MongoHQ, a high-growth Database-as-a-Service company, and a Y Combinator alumnus. He is responsible for the vision and implementation of the technology that makes the MongoHQ product special. He has a background in computer engineering and has worked with numerous development languages and database technologies." }, rel: 'popover', href: '#' }
-          %img{ src: '/images/speakers/ben-wyrosdick.png', class: 'thumbnail', width: '210', height: '210'  }
-          %span
-            Ben Wyrosdick
-            %small
-              Co-founder, MongoHQ
-      
-      -#
-        %li
-          %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
-            %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x210' }
-            %span
-              Founder #6
-              %small
-                Company
-        %li
-          %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
-            %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x210' }
-            %span
-              Founder #7
-              %small
-                Company
-        %li
-          %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
-            %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x210' }
-            %span
-              Founder #8
-              %small
-                Company
-    -#
-      .row
-        .offset4
-          %ul.media-grid
-            %li
-              %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
-                %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x210' }
-                %span
-                  Founder #9
-                  %small
-                    Company
-            %li
-              %a{ :title => "#{lorem.name}", 'data-content' => "#{lorem.paragraph}", :rel => 'popover', :href => '#' }
-                %img{ :class => 'thumbnail', :src => 'http://placehold.it/210x210' }    
-                %span
-                  Founder #10
-                  %small
-                    Company
   
