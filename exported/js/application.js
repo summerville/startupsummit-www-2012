@@ -1,4 +1,5 @@
 (function() {
+
   $(function() {
     return $("a[rel='popover']").popover({
       'placement': 'above',
@@ -7,4 +8,5 @@
       return e.preventDefault();
     });
   });
+
 }).call(this);
