@@ -33,9 +33,9 @@
             %li{ :class => "#{active_nav_link == :root ? 'active' : '' }" }
               %a{ :href => "#{active_nav_link != :root ? '/' : '' }#overview" } Overview
             %li
-              %a{ :href => "#{active_nav_link != :root ? '/' : '' }#schedule" } Schedule
-            %li
               %a{ :href => "#{active_nav_link != :root ? '/' : '' }#speakers" } Speakers
+            %li
+              %a{ :href => "#{active_nav_link != :root ? '/' : '' }#schedule" } Schedule
             %li{ :class => "#{active_nav_link == :apply ? 'active' : '' }" }
               %a{ :href => '/apply' } Apply
           %p.pull-right

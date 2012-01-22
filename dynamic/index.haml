@@ -55,7 +55,7 @@ META----------------------------------------------------------------------------
     .page-header
       .row
         .span8
-          %h1 Founder Speakers
+          %h1 Featured Founders
         .span8
           / AddThis Button BEGIN
           .addthis_toolbox.addthis_default_style.pull-right{ add_this_url_and_title }
@@ -140,9 +140,11 @@ META----------------------------------------------------------------------------
                 Ben Wyrosdick
                 %small
                   Co-founder, MongoHQ
-                    
-    .alert-message.block-message.info
-      <strong>More founder speakers are still being confirmed.</strong> Check back for updates.
+    
+    .row
+      .span12.offset2
+        .alert-message.block-message.info
+          <strong>More founder speakers are still being confirmed.</strong> Check back for updates.
     
 
   /
@@ -157,46 +159,33 @@ META----------------------------------------------------------------------------
           %tbody
             %tr
               %td.time{ style: 'border-top: 0;' } 9:00
-              %td{ style: 'border-top: 0;' } Opening &mdash; David Gray
+              %td{ style: 'border-top: 0;' } 
+                Keynote
+                %small
+                  David Gray
+                  %a{ :title => 'David Gray', 'data-content' => "David is president and CEO of Daxko, a Birmingham-based software and services provider for member-based non-profits with nearly 500 customers and 170 team members around the world. Those who know David know he is passionate about promoting Birmingham and high-growth companies.", :rel => 'popover', :href => '#' }
+                    %img{ src: '/images/info-icon.png', width: '13', height: '13', style: 'vertical-align:baseline' }
             %tr
-              %td.time 9:30
-              %td Founder #1 <small>TBD</small>
-            %tr
-              %td.time 10:00
-              %td Founder #2 <small>TBD</small>
+              %td.time &nbsp;
+              %td{ style: 'height: 75px; line-height: 75px;' } Founder Talks
             %tr
               %td.time 10:30
               %td.break Coffee Break
             %tr
-              %td.time 11:00
-              %td Founder #3 <small>TBD</small>
-            %tr
-              %td.time 11:30
-              %td Founder #4 <small>TBD</small>
+              %td.time &nbsp;
+              %td{ style: 'height: 75px; line-height: 75px;' } Founder Talks
             %tr
               %td.time 12:00
-              %td.break Lunch
+              %td.break Lunch <small>(provided)</small>
             %tr
-              %td.time 1:30
-              %td Founder #5 <small>TBD</small>
-            %tr
-              %td.time 2:00
-              %td Founder #6 <small>TBD</small>
-            %tr
-              %td.time 2:30
-              %td Founder #7 <small>TBD</small>
+              %td.time &nbsp;
+              %td{ style: 'height: 75px; line-height: 75px;' } Founder Talks
             %tr
               %td.time 3:00
               %td.break Coffee Break
             %tr
-              %td.time 3:30
-              %td Founder #8 <small>TBD</small>
-            %tr
-              %td.time 4:00
-              %td Founder #9 <small>TBD</small>
-            %tr
-              %td.time 4:30
-              %td Founder #10 <small>TBD</small>
+              %td.time &nbsp;
+              %td{ style: 'height: 75px; line-height: 75px;' } Founder Talks
             %tr
               %td.time 5:00
               %td Close Up Shop
@@ -207,7 +196,8 @@ META----------------------------------------------------------------------------
                   Startup Drinks
                   
       .span7
-        .alert-message.block-message.info
-          <strong>The schedule and speakers are still being confirmed.</strong> Please check back for
-          updates.
+        -#
+          .alert-message.block-message.info
+            <strong>The schedule and speakers are still being confirmed.</strong> Please check back for
+            updates.
   
