@@ -6,3 +6,6 @@ $ -> # DOM Content Loaded
     'offset' : 2
   ).click (e) ->
     e.preventDefault()
+
+  # Enable Colorbox
+  $("a[rel='colorbox']").colorbox({maxWidth: 750})

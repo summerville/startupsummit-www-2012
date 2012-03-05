@@ -1,0 +1,11 @@
+.modal-header
+  %h3
+    = title
+    %small= subtitle
+.modal-body
+  .row
+    .span7
+      = yield
+    .span4
+      %p
+        %img{ src: "/images/speakers/#{photo_filename}", width: '210', height: '210'  }
