@@ -28,15 +28,23 @@ META----------------------------------------------------------------------------
 .container
 
   %section#apply
-    :javascript
-      var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));
+    .page-header
+      %h2.ac Sorry, we're no longer accepting applications.
+    %p
+      We've already had an overwhelming amount of applications for a limited number of invitations
+      to this year's Startup Summit. We've stopped accepting applications at this time but check
+      back later for updates.
 
-    :javascript
-      var z7x3k1 = new WufooForm();
-      z7x3k1.initialize({
-      'userName':'startupsummit', 
-      'formHash':'z7x3k1', 
-      'autoResize':true,
-      'height':'710',
-      'header':'show'});
-      z7x3k1.display();
+    -#
+      :javascript
+        var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));
+
+      :javascript
+        var z7x3k1 = new WufooForm();
+        z7x3k1.initialize({
+        'userName':'startupsummit',
+        'formHash':'z7x3k1',
+        'autoResize':true,
+        'height':'710',
+        'header':'show'});
+        z7x3k1.display();
