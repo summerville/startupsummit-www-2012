@@ -9,7 +9,7 @@
     });
     return $("a[rel='colorbox']").colorbox({
       'maxWidth': 750,
-      'current': "speaker {current} of {total}"
+      'current': "{current} of {total}"
     });
   });
 
