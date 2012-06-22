@@ -39,11 +39,12 @@
               %a{ :href => "#{active_nav_link != :root ? '/' : '' }#schedule" } Schedule
             %li
               %a{ :href => "#{active_nav_link != :root ? '/' : '' }#sponsors" } Sponsors
-            %li{ :class => "#{active_nav_link == :apply ? 'active' : '' }" }
-              %a{ :href => '/apply' } Apply
-          %p.pull-right
-            %strong
-              Coming April 24th, 2012
+            %li{ :class => "#{active_nav_link == :recap ? 'active' : '' }" }
+              %a{ :href => '/2012' } 2012 Recap
+          -#
+            %p.pull-right
+              %strong
+                Coming April 24th, 2012
     = yield
       
     %footer
