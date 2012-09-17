@@ -13,15 +13,26 @@ META----------------------------------------------------------------------------
         Event follow-up and a virtual takeaway
 
 .container
-  %section#photos
+  %section#media
     .page-header
       %h1
-        Photos from the Event
-    %ul.media-grid
-      - 0.upto(27) do |i|
-        %li
-          %a{ rel: 'colorbox', href: "/images/2012/startupsummit-0#{i.to_s.rjust(2, '0')}.jpg", style: i%7 == 0 ? 'clear:left' : '' }
-            %img{ src: "/images/2012/thumbs/startupsummit-0#{i.to_s.rjust(2, '0')}.jpg", class: 'thumbnail', width: '100'  }
+        Photos & videos
+    .row
+      .span8
+        %ul.media-grid
+          - 12.upto(20) do |i|
+            %li
+              %a{ rel: 'colorbox', href: "/images/2012/startupsummit-0#{i.to_s.rjust(2, '0')}.jpg", style: i%3 == 0 ? 'clear:left' : '' }
+                %img{ src: "/images/2012/thumbs/startupsummit-0#{i.to_s.rjust(2, '0')}.jpg", class: 'thumbnail', width: '100'  }
+        %p
+          %a{ href: '/2012/photos', title: 'All photos from 2012', class: 'btn huge primary ac' }
+            All Photos &rarr;
+      .span8
+        %p
+          <iframe width="460" height="259" src="http://www.youtube.com/embed/GM5WiIO9zT8?rel=0" frameborder="0" allowfullscreen></iframe>
+        %p
+          %a{ href: '/2012/videos', title: 'All videos from 2012', class: 'btn huge primary ac' }
+            All Videos &rarr;
 
   %section#virtual-takeaway
     .page-header

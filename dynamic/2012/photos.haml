@@ -1,0 +1,21 @@
+title: 2012 Summit Photos
+active_nav_link: :recap
+META------------------------------------------------------------------------------------------------
+
+/
+  Overview
+  \========
+%header.jumbotron.subhead
+  .container
+    .inner
+      %h1 Photos
+      %p.lead
+        %a{href: '/2012'} &larr; 2012 Birmingham Startup Summit
+
+.container
+  %section#photos
+    %ul.media-grid
+      - 0.upto(27) do |i|
+        %li
+          %a{ rel: 'colorbox', href: "/images/2012/startupsummit-0#{i.to_s.rjust(2, '0')}.jpg", style: i%7 == 0 ? 'clear:left' : '' }
+            %img{ src: "/images/2012/thumbs/startupsummit-0#{i.to_s.rjust(2, '0')}.jpg", class: 'thumbnail', width: '100'  }
